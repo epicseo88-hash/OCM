@@ -5,7 +5,7 @@ import { posts } from '@/content/posts'
 export const dynamic = 'force-static'
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const base = 'https://edgebet.com'
+  const base = 'https://igaminghub.com'
 
   const staticRoutes: MetadataRoute.Sitemap = [
     { url: base + '/', lastModified: new Date(), changeFrequency: 'daily', priority: 1 },

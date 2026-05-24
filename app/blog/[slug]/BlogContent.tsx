@@ -87,7 +87,7 @@ export default function BlogContent({ post }: BlogContentProps) {
         <div
           className="sticky top-28 rounded-2xl p-5"
           style={{
-            background: 'rgba(59,31,10,0.4)',
+            background: 'rgba(29,0,85,0.4)',
             border: '1px solid rgba(240,235,227,0.06)',
           }}
         >

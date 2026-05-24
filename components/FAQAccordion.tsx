@@ -16,7 +16,7 @@ function FAQItem({ faq, isOpen, onToggle }: { faq: FAQ; isOpen: boolean; onToggl
     <div
       className="rounded-xl overflow-hidden transition-all duration-200"
       style={{
-        background: 'rgba(59, 31, 10, 0.4)',
+        background: 'rgba(29, 0, 85, 0.4)',
         border: isOpen ? '1px solid rgba(0,180,216,0.4)' : '1px solid rgba(240,235,227,0.08)',
       }}
     >

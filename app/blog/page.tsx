@@ -5,19 +5,19 @@ import FadeUp from '@/components/FadeUp'
 
 export const metadata: Metadata = {
   title: 'Casino Strategy Blog & Guides',
-  description: 'Expert casino strategy guides, RTP analysis, bonus tutorials, and crypto gambling deep-dives from the EdgeBet editorial team.',
-  alternates: { canonical: 'https://edgebet.com/blog/' },
+  description: 'Expert casino strategy guides, RTP analysis, bonus tutorials, and crypto gambling deep-dives from the iGamingHub editorial team.',
+  alternates: { canonical: 'https://igaminghub.com/blog/' },
   openGraph: {
-    title: 'Casino Strategy Blog | EdgeBet',
-    description: 'Expert casino strategy guides and deep-dives from the EdgeBet editorial team.',
-    url: 'https://edgebet.com/blog/',
+    title: 'Casino Strategy Blog | iGamingHub',
+    description: 'Expert casino strategy guides and deep-dives from the iGamingHub editorial team.',
+    url: 'https://igaminghub.com/blog/',
     images: [{ url: '/og/default.png', width: 1200, height: 630 }],
   },
 }
 
 export default function BlogPage() {
   return (
-    <div className="pt-24 pb-20 min-h-screen" style={{ background: '#2D0A6B' }}>
+    <div className="pt-24 pb-20 min-h-screen" style={{ background: '#16003E' }}>
       <div className="mx-auto max-w-7xl px-6">
         <header className="mb-14 text-center">
           <p className="text-xs font-semibold uppercase tracking-widest text-gas-blue mb-3">Strategy & analysis</p>
@@ -25,7 +25,7 @@ export default function BlogPage() {
             className="font-bold mb-4"
             style={{ fontSize: 'clamp(2.5rem, 5vw, 5rem)', color: '#F0EBE3', letterSpacing: '-0.03em' }}
           >
-            The EdgeBet Blog
+            The iGamingHub Blog
           </h1>
           <p className="mx-auto max-w-xl text-base leading-relaxed" style={{ color: 'rgba(240,235,227,0.6)' }}>
             Guides, deep-dives, and strategy content from analysts who have worked in the industry for a decade.

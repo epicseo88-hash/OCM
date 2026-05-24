@@ -14,19 +14,19 @@ const poppins = Poppins({
 
 export const metadata: Metadata = {
   title: {
-    default: 'EdgeBet — Expert Online Casino Reviews',
-    template: '%s | EdgeBet',
+    default: 'iGamingHub — Expert Online Casino Reviews',
+    template: '%s | iGamingHub',
   },
-  description: 'EdgeBet delivers independent, expert-reviewed online casino rankings. Find your edge with trusted reviews, bonus guides, and strategy content.',
-  metadataBase: new URL('https://edgebet.com'),
+  description: 'iGamingHub delivers independent, expert-reviewed online casino rankings. Find your edge with trusted reviews, bonus guides, and strategy content.',
+  metadataBase: new URL('https://igaminghub.com'),
   openGraph: {
     type: 'website',
-    siteName: 'EdgeBet',
+    siteName: 'iGamingHub',
     images: [{ url: '/og/default.png', width: 1200, height: 630 }],
   },
   twitter: {
     card: 'summary_large_image',
-    site: '@EdgeBet',
+    site: '@iGamingHub',
   },
   robots: { index: true, follow: true },
 }

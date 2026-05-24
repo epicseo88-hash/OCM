@@ -2,13 +2,13 @@ import type { Metadata } from 'next'
 import FadeUp from '@/components/FadeUp'
 
 export const metadata: Metadata = {
-  title: 'About EdgeBet — Our Story & Methodology',
-  description: 'EdgeBet is an independent casino review platform run by industry veterans since 2015. Learn about our review methodology, our team, and our commitment to unbiased analysis.',
-  alternates: { canonical: 'https://edgebet.com/about/' },
+  title: 'About iGamingHub — Our Story & Methodology',
+  description: 'iGamingHub is an independent casino review platform run by industry veterans since 2015. Learn about our review methodology, our team, and our commitment to unbiased analysis.',
+  alternates: { canonical: 'https://igaminghub.com/about/' },
   openGraph: {
-    title: 'About EdgeBet | Independent Casino Reviews Since 2015',
+    title: 'About iGamingHub | Independent Casino Reviews Since 2015',
     description: 'Learn about our team, methodology, and commitment to independent reviews.',
-    url: 'https://edgebet.com/about/',
+    url: 'https://igaminghub.com/about/',
     images: [{ url: '/og/default.png', width: 1200, height: 630 }],
   },
 }
@@ -29,7 +29,7 @@ const TEAM = [
   {
     name: 'Marcus Webb',
     title: 'Live Casino Editor',
-    bio: '8 years working in live dealer production before joining EdgeBet. Marcus evaluates streaming quality, dealer professionalism, and game fairness from an insider\'s perspective no other review site can match.',
+    bio: '8 years working in live dealer production before joining iGamingHub. Marcus evaluates streaming quality, dealer professionalism, and game fairness from an insider\'s perspective no other review site can match.',
     initials: 'MW',
   },
 ]
@@ -76,11 +76,11 @@ const TRUST_SIGNALS = [
 
 export default function AboutPage() {
   return (
-    <div className="pt-24 pb-20 min-h-screen" style={{ background: '#2D0A6B' }}>
+    <div className="pt-24 pb-20 min-h-screen" style={{ background: '#16003E' }}>
       {/* Hero */}
       <section
         className="py-20 relative overflow-hidden grain mb-16"
-        style={{ background: '#3B1F0A', borderBottom: '1px solid rgba(0,180,216,0.1)' }}
+        style={{ background: '#1D0055', borderBottom: '1px solid rgba(0,180,216,0.1)' }}
       >
         <div className="mx-auto max-w-4xl px-6 text-center">
           <FadeUp>
@@ -92,7 +92,7 @@ export default function AboutPage() {
               No Agenda. No Compromise.
             </h1>
             <p className="text-lg leading-relaxed" style={{ color: 'rgba(240,235,227,0.65)' }}>
-              EdgeBet was founded on a single principle: players deserve reviews that tell the truth, including when the truth is unflattering. We accept no payment for placement. We test with real money. We publish what we find.
+              iGamingHub was founded on a single principle: players deserve reviews that tell the truth, including when the truth is unflattering. We accept no payment for placement. We test with real money. We publish what we find.
             </p>
           </FadeUp>
         </div>
@@ -133,7 +133,7 @@ export default function AboutPage() {
                   Giving Players the Information They Deserve
                 </h2>
                 <p className="text-base leading-relaxed mb-4" style={{ color: 'rgba(240,235,227,0.7)' }}>
-                  The online casino review space is polluted with affiliate sites that rank casinos based on commission rates rather than quality. We built EdgeBet as the antidote: a platform where the rankings reflect actual performance, tested by people who have worked inside the industry.
+                  The online casino review space is polluted with affiliate sites that rank casinos based on commission rates rather than quality. We built iGamingHub as the antidote: a platform where the rankings reflect actual performance, tested by people who have worked inside the industry.
                 </p>
                 <p className="text-base leading-relaxed" style={{ color: 'rgba(240,235,227,0.7)' }}>
                   We do earn affiliate revenue when readers visit casinos from our links, but this never influences rankings. Our scoring methodology is public, our review process is documented, and we will publish a negative review of a casino regardless of commercial relationship.

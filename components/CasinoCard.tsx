@@ -13,7 +13,7 @@ export default function CasinoCard({ casino, rank }: CasinoCardProps) {
     <article
       className="group relative flex flex-col rounded-2xl overflow-hidden transition-all duration-300 hover:-translate-y-1"
       style={{
-        background: 'rgba(59, 31, 10, 0.4)',
+        background: 'rgba(29, 0, 85, 0.4)',
         border: '1px solid rgba(0, 180, 216, 0.15)',
         backdropFilter: 'blur(12px)',
         WebkitBackdropFilter: 'blur(12px)',

@@ -10,17 +10,17 @@ import StarRating from '@/components/StarRating'
 import FadeUp from '@/components/FadeUp'
 
 export const metadata: Metadata = {
-  title: 'EdgeBet — Expert Online Casino Reviews',
-  description: 'Find your edge with EdgeBet. Independent expert reviews of 200+ online casinos, exclusive bonus guides, and proven strategy content trusted by 50,000 readers per month.',
-  alternates: { canonical: 'https://edgebet.com/' },
+  title: 'iGamingHub — Expert Online Casino Reviews',
+  description: 'Find your edge with iGamingHub. Independent expert reviews of 200+ online casinos, exclusive bonus guides, and proven strategy content trusted by 50,000 readers per month.',
+  alternates: { canonical: 'https://igaminghub.com/' },
   openGraph: {
-    title: 'EdgeBet — Expert Online Casino Reviews',
+    title: 'iGamingHub — Expert Online Casino Reviews',
     description: 'Independent expert casino reviews trusted by 50,000 players per month.',
-    url: 'https://edgebet.com/',
+    url: 'https://igaminghub.com/',
     images: [{ url: '/og/default.png', width: 1200, height: 630 }],
   },
   twitter: {
-    title: 'EdgeBet — Expert Online Casino Reviews',
+    title: 'iGamingHub — Expert Online Casino Reviews',
     description: 'Independent expert casino reviews trusted by 50,000 players per month.',
     images: ['/og/default.png'],
   },
@@ -49,7 +49,7 @@ export default function HomePage() {
       {/* Hero */}
       <section
         className="relative min-h-screen flex items-center justify-center overflow-hidden grain pt-24"
-        style={{ background: '#2D0A6B' }}
+        style={{ background: '#16003E' }}
       >
         <div className="particle-grid absolute inset-0 z-0" aria-hidden="true" />
         <div className="relative z-10 mx-auto max-w-5xl px-6 text-center">
@@ -102,13 +102,13 @@ export default function HomePage() {
         </div>
         <div
           className="absolute bottom-0 left-0 right-0 h-32 z-10"
-          style={{ background: 'linear-gradient(to bottom, transparent, #2D0A6B)' }}
+          style={{ background: 'linear-gradient(to bottom, transparent, #16003E)' }}
           aria-hidden="true"
         />
       </section>
 
       {/* Top Casinos Strip */}
-      <section className="py-20" style={{ background: '#2D0A6B' }}>
+      <section className="py-20" style={{ background: '#16003E' }}>
         <div className="mx-auto max-w-7xl px-6">
           <FadeUp>
             <div className="flex items-end justify-between mb-10">
@@ -144,7 +144,7 @@ export default function HomePage() {
       <MarqueeBanner />
 
       {/* Categories */}
-      <section className="py-20" style={{ background: '#260940' }}>
+      <section className="py-20" style={{ background: '#0F0028' }}>
         <div className="mx-auto max-w-7xl px-6">
           <FadeUp>
             <div className="text-center mb-12">
@@ -186,7 +186,7 @@ export default function HomePage() {
       </section>
 
       {/* Editorial Pick */}
-      <section className="relative py-28 overflow-hidden" style={{ background: '#3B1F0A' }}>
+      <section className="relative py-28 overflow-hidden" style={{ background: '#1D0055' }}>
         <div
           className="absolute inset-0 opacity-10"
           style={{
@@ -276,7 +276,7 @@ export default function HomePage() {
       </section>
 
       {/* Why Trust Us */}
-      <section className="py-20" style={{ background: '#2D0A6B' }}>
+      <section className="py-20" style={{ background: '#16003E' }}>
         <div className="mx-auto max-w-7xl px-6">
           <FadeUp>
             <div className="text-center mb-14">
@@ -285,7 +285,7 @@ export default function HomePage() {
                 className="font-bold"
                 style={{ fontSize: 'clamp(1.8rem, 3vw, 3rem)', color: '#F0EBE3', letterSpacing: '-0.02em' }}
               >
-                Why 50,000 Players Trust EdgeBet
+                Why 50,000 Players Trust iGamingHub
               </h2>
             </div>
           </FadeUp>
@@ -332,7 +332,7 @@ export default function HomePage() {
       </section>
 
       {/* Latest Reviews Feed */}
-      <section className="py-20" style={{ background: '#260940' }}>
+      <section className="py-20" style={{ background: '#0F0028' }}>
         <div className="mx-auto max-w-7xl px-6">
           <FadeUp>
             <div className="flex items-end justify-between mb-10">
@@ -361,7 +361,7 @@ export default function HomePage() {
       </section>
 
       {/* Latest Blog Posts */}
-      <section className="py-20" style={{ background: '#2D0A6B' }}>
+      <section className="py-20" style={{ background: '#16003E' }}>
         <div className="mx-auto max-w-7xl px-6">
           <FadeUp>
             <div className="flex items-end justify-between mb-10">
@@ -428,7 +428,7 @@ export default function HomePage() {
         <div className="mx-auto max-w-2xl px-6 text-center relative z-10">
           <h2
             className="font-bold mb-3"
-            style={{ fontSize: 'clamp(1.8rem, 3vw, 3rem)', color: '#2D0A6B', letterSpacing: '-0.02em' }}
+            style={{ fontSize: 'clamp(1.8rem, 3vw, 3rem)', color: '#16003E', letterSpacing: '-0.02em' }}
           >
             Stay Ahead of the Game
           </h2>

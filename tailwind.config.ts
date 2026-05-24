@@ -9,8 +9,8 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        'deep-purple': '#2D0A6B',
-        'rich-brown': '#3B1F0A',
+        'deep-purple': '#16003E',
+        'rich-brown': '#1D0055',
         'gas-blue': '#00B4D8',
         'off-white': '#F0EBE3',
         'gold': '#C9A84C',

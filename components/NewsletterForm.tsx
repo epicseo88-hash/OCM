@@ -30,7 +30,7 @@ export default function NewsletterForm() {
         required
         className="flex-1 rounded-xl px-4 py-3 text-sm font-medium outline-none transition-all duration-200"
         style={{
-          background: 'rgba(45,10,107,0.3)',
+          background: 'rgba(22,0,62,0.4)',
           border: status === 'error' ? '1px solid #ef4444' : '1px solid rgba(240,235,227,0.15)',
           color: '#F0EBE3',
         }}
@@ -40,7 +40,7 @@ export default function NewsletterForm() {
       <button
         type="submit"
         className="rounded-xl px-6 py-3 text-sm font-bold text-deep-purple transition-all duration-200 hover:shadow-glow-blue whitespace-nowrap"
-        style={{ background: '#2D0A6B', color: '#F0EBE3', border: '1px solid rgba(240,235,227,0.2)' }}
+        style={{ background: '#16003E', color: '#F0EBE3', border: '1px solid rgba(240,235,227,0.2)' }}
       >
         Subscribe
       </button>

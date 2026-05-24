@@ -19,11 +19,11 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   return {
     title: `${casino.name} Review ${new Date().getFullYear()} — Bonus, Games & Verdict`,
     description: `Expert review of ${casino.name}. Rating: ${casino.rating}/5. Bonus: ${casino.bonus}. Full analysis of games, payments, and support.`,
-    alternates: { canonical: `https://edgebet.com/reviews/${slug}/` },
+    alternates: { canonical: `https://igaminghub.com/reviews/${slug}/` },
     openGraph: {
-      title: `${casino.name} Review | EdgeBet`,
+      title: `${casino.name} Review | iGamingHub`,
       description: `Rating ${casino.rating}/5 — ${casino.bonus}`,
-      url: `https://edgebet.com/reviews/${slug}/`,
+      url: `https://igaminghub.com/reviews/${slug}/`,
       images: [{ url: '/og/default.png', width: 1200, height: 630 }],
     },
   }
@@ -49,9 +49,9 @@ export default async function CasinoReviewPage({ params }: { params: Promise<{ s
     '@context': 'https://schema.org',
     '@type': 'BreadcrumbList',
     itemListElement: [
-      { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://edgebet.com/' },
-      { '@type': 'ListItem', position: 2, name: 'Reviews', item: 'https://edgebet.com/reviews/' },
-      { '@type': 'ListItem', position: 3, name: casino.name, item: `https://edgebet.com/reviews/${slug}/` },
+      { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://igaminghub.com/' },
+      { '@type': 'ListItem', position: 2, name: 'Reviews', item: 'https://igaminghub.com/reviews/' },
+      { '@type': 'ListItem', position: 3, name: casino.name, item: `https://igaminghub.com/reviews/${slug}/` },
     ],
   }
 
@@ -70,7 +70,7 @@ export default async function CasinoReviewPage({ params }: { params: Promise<{ s
     '@type': 'Person',
     name: casino.author,
     jobTitle: casino.authorTitle,
-    url: 'https://edgebet.com/about/',
+    url: 'https://igaminghub.com/about/',
   }
 
   return (
@@ -79,7 +79,7 @@ export default async function CasinoReviewPage({ params }: { params: Promise<{ s
       <SchemaScript schema={faqSchema} />
       <SchemaScript schema={authorSchema} />
 
-      <div className="pt-24 pb-20 min-h-screen" style={{ background: '#2D0A6B' }}>
+      <div className="pt-24 pb-20 min-h-screen" style={{ background: '#16003E' }}>
         {/* Breadcrumb */}
         <nav aria-label="Breadcrumb" className="mx-auto max-w-7xl px-6 mb-8">
           <ol className="flex items-center gap-2 text-xs" style={{ color: 'rgba(240,235,227,0.4)' }}>
@@ -94,7 +94,7 @@ export default async function CasinoReviewPage({ params }: { params: Promise<{ s
         {/* Hero */}
         <header
           className="relative py-16 mb-12 overflow-hidden grain"
-          style={{ background: '#3B1F0A', borderBottom: '1px solid rgba(0,180,216,0.1)' }}
+          style={{ background: '#1D0055', borderBottom: '1px solid rgba(0,180,216,0.1)' }}
         >
           <div className="mx-auto max-w-7xl px-6 flex flex-col md:flex-row items-start md:items-center gap-8">
             <Image

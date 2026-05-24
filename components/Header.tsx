@@ -16,7 +16,7 @@ export default function Header() {
     <header
       className="fixed top-0 left-0 right-0 z-50"
       style={{
-        background: 'rgba(45,10,107,0.85)',
+        background: 'rgba(22,0,62,0.9)',
         backdropFilter: 'blur(20px)',
         WebkitBackdropFilter: 'blur(20px)',
         borderBottom: '1px solid rgba(0,180,216,0.12)',
@@ -28,7 +28,7 @@ export default function Header() {
           className="text-xl font-bold tracking-tight"
           style={{ color: '#F0EBE3', letterSpacing: '-0.02em' }}
         >
-          Edge<span style={{ color: '#00B4D8' }}>Bet</span>
+          iGaming<span style={{ color: '#00B4D8' }}>Hub</span>
         </Link>
 
         <nav aria-label="Primary navigation" className="hidden md:flex items-center gap-8">
@@ -100,7 +100,7 @@ export default function Header() {
             href="/reviews/"
             onClick={() => setMenuOpen(false)}
             className="inline-block rounded-xl px-5 py-2.5 text-sm font-bold text-center"
-            style={{ background: '#00B4D8', color: '#2D0A6B' }}
+            style={{ background: '#00B4D8', color: '#16003E' }}
           >
             Top Casinos
           </Link>

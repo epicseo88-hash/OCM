@@ -4,19 +4,19 @@ import ReviewsClient from './ReviewsClient'
 
 export const metadata: Metadata = {
   title: 'Online Casino Reviews 2025',
-  description: 'Browse EdgeBet\'s complete index of expert-reviewed online casinos. Filter by rating, bonus size, or game type to find your perfect match.',
-  alternates: { canonical: 'https://edgebet.com/reviews/' },
+  description: 'Browse iGamingHub\'s complete index of expert-reviewed online casinos. Filter by rating, bonus size, or game type to find your perfect match.',
+  alternates: { canonical: 'https://igaminghub.com/reviews/' },
   openGraph: {
-    title: 'Online Casino Reviews 2025 | EdgeBet',
+    title: 'Online Casino Reviews 2025 | iGamingHub',
     description: 'Expert-audited casino rankings with no paid placements.',
-    url: 'https://edgebet.com/reviews/',
+    url: 'https://igaminghub.com/reviews/',
     images: [{ url: '/og/default.png', width: 1200, height: 630 }],
   },
 }
 
 export default function ReviewsPage() {
   return (
-    <div className="pt-24 pb-20 min-h-screen" style={{ background: '#2D0A6B' }}>
+    <div className="pt-24 pb-20 min-h-screen" style={{ background: '#16003E' }}>
       <div className="mx-auto max-w-7xl px-6">
         <header className="mb-12 text-center">
           <p className="text-xs font-semibold uppercase tracking-widest text-gas-blue mb-3">

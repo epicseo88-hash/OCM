@@ -17,11 +17,11 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   return {
     title: post.title,
     description: post.excerpt,
-    alternates: { canonical: `https://edgebet.com/blog/${slug}/` },
+    alternates: { canonical: `https://igaminghub.com/blog/${slug}/` },
     openGraph: {
       title: post.title,
       description: post.excerpt,
-      url: `https://edgebet.com/blog/${slug}/`,
+      url: `https://igaminghub.com/blog/${slug}/`,
       type: 'article',
       authors: [post.author],
       publishedTime: post.datePublished,
@@ -44,9 +44,9 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
     '@context': 'https://schema.org',
     '@type': 'BreadcrumbList',
     itemListElement: [
-      { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://edgebet.com/' },
-      { '@type': 'ListItem', position: 2, name: 'Blog', item: 'https://edgebet.com/blog/' },
-      { '@type': 'ListItem', position: 3, name: post.title, item: `https://edgebet.com/blog/${slug}/` },
+      { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://igaminghub.com/' },
+      { '@type': 'ListItem', position: 2, name: 'Blog', item: 'https://igaminghub.com/blog/' },
+      { '@type': 'ListItem', position: 3, name: post.title, item: `https://igaminghub.com/blog/${slug}/` },
     ],
   }
 
@@ -65,7 +65,7 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
     '@type': 'Person',
     name: post.author,
     jobTitle: post.authorTitle,
-    url: 'https://edgebet.com/about/',
+    url: 'https://igaminghub.com/about/',
   }
 
   const articleSchema = {
@@ -75,7 +75,7 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
     description: post.excerpt,
     datePublished: post.datePublished,
     author: { '@type': 'Person', name: post.author },
-    publisher: { '@type': 'Organization', name: 'EdgeBet', url: 'https://edgebet.com' },
+    publisher: { '@type': 'Organization', name: 'iGamingHub', url: 'https://igaminghub.com' },
   }
 
   return (
@@ -85,7 +85,7 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
       <SchemaScript schema={authorSchema} />
       <SchemaScript schema={articleSchema} />
 
-      <div className="pt-24 pb-20 min-h-screen" style={{ background: '#2D0A6B' }}>
+      <div className="pt-24 pb-20 min-h-screen" style={{ background: '#16003E' }}>
         {/* Breadcrumb */}
         <nav aria-label="Breadcrumb" className="mx-auto max-w-7xl px-6 mb-8">
           <ol className="flex items-center gap-2 text-xs" style={{ color: 'rgba(240,235,227,0.4)' }}>
@@ -100,7 +100,7 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
         {/* Hero */}
         <header
           className="py-14 mb-12 relative overflow-hidden grain"
-          style={{ background: '#3B1F0A', borderBottom: '1px solid rgba(0,180,216,0.1)' }}
+          style={{ background: '#1D0055', borderBottom: '1px solid rgba(0,180,216,0.1)' }}
         >
           <div className="mx-auto max-w-3xl px-6">
             <div className="flex items-center gap-3 mb-5">

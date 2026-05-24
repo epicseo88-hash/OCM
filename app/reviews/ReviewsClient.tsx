@@ -58,7 +58,7 @@ export default function ReviewsClient({ casinos }: ReviewsClientProps) {
             onChange={(e) => setSortBy(e.target.value as SortOption)}
             className="rounded-lg px-3 py-1.5 text-xs font-semibold outline-none cursor-pointer"
             style={{
-              background: 'rgba(59,31,10,0.6)',
+              background: 'rgba(29,0,85,0.6)',
               border: '1px solid rgba(240,235,227,0.1)',
               color: '#F0EBE3',
             }}

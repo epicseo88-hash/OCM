@@ -14,7 +14,7 @@ const LINKS = {
     { href: '/blog/crypto-casino-guide-2025/', label: 'Crypto Casinos' },
   ],
   Company: [
-    { href: '/about/', label: 'About EdgeBet' },
+    { href: '/about/', label: 'About iGamingHub' },
   ],
 }
 
@@ -22,7 +22,7 @@ export default function Footer() {
   return (
     <footer
       className="pt-16 pb-8"
-      style={{ background: '#1a0640', borderTop: '1px solid rgba(0,180,216,0.1)' }}
+      style={{ background: '#08001A', borderTop: '1px solid rgba(0,180,216,0.1)' }}
     >
       <div className="mx-auto max-w-7xl px-6">
         <div className="grid grid-cols-2 gap-8 md:grid-cols-4 mb-12">
@@ -32,7 +32,7 @@ export default function Footer() {
               className="text-2xl font-bold mb-3 block"
               style={{ color: '#F0EBE3', letterSpacing: '-0.02em' }}
             >
-              Edge<span style={{ color: '#00B4D8' }}>Bet</span>
+              iGaming<span style={{ color: '#00B4D8' }}>Hub</span>
             </Link>
             <p className="text-sm leading-relaxed" style={{ color: 'rgba(240,235,227,0.45)' }}>
               Independent casino reviews since 2015. No sponsored rankings. No hidden agendas.
@@ -68,7 +68,7 @@ export default function Footer() {
           style={{ borderTop: '1px solid rgba(240,235,227,0.06)' }}
         >
           <p className="text-xs max-w-2xl leading-relaxed" style={{ color: 'rgba(240,235,227,0.3)' }}>
-            EdgeBet provides independent reviews and guides for informational purposes only. Gambling involves financial risk.
+            iGamingHub provides independent reviews and guides for informational purposes only. Gambling involves financial risk.
             Only gamble with money you can afford to lose. Must be 18+ to gamble. If gambling is causing harm, contact{' '}
             <a
               href="https://www.begambleaware.org"
@@ -91,7 +91,7 @@ export default function Footer() {
         </div>
 
         <p className="mt-4 text-xs" style={{ color: 'rgba(240,235,227,0.2)' }}>
-          © {new Date().getFullYear()} EdgeBet. All rights reserved.
+          © {new Date().getFullYear()} iGamingHub. All rights reserved.
         </p>
       </div>
     </footer>

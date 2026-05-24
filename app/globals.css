@@ -3,8 +3,8 @@
 @tailwind utilities;
 
 :root {
-  --deep-purple: #2D0A6B;
-  --rich-brown: #3B1F0A;
+  --deep-purple: #16003E;
+  --rich-brown: #1D0055;
   --gas-blue: #00B4D8;
   --off-white: #F0EBE3;
   --gold: #C9A84C;
@@ -22,7 +22,7 @@ html {
 }
 
 body {
-  background: var(--deep-purple);
+  background: #0A0020;
   color: var(--off-white);
   font-family: var(--font-poppins), sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -99,7 +99,7 @@ body {
 /* Particle grid */
 .particle-grid {
   background-image:
-    radial-gradient(circle at 1px 1px, rgba(0,180,216,0.12) 1px, transparent 0);
+    radial-gradient(circle at 1px 1px, rgba(153,0,255,0.18) 1px, transparent 0);
   background-size: 40px 40px;
   animation: gridShift 20s linear infinite;
 }
