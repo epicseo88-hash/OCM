@@ -1,0 +1,161 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --deep-purple: #2D0A6B;
+  --rich-brown: #3B1F0A;
+  --gas-blue: #00B4D8;
+  --off-white: #F0EBE3;
+  --gold: #C9A84C;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+  cursor: none;
+}
+
+body {
+  background: var(--deep-purple);
+  color: var(--off-white);
+  font-family: var(--font-poppins), sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+}
+
+@media (pointer: coarse) {
+  html { cursor: auto; }
+}
+
+::selection {
+  background: rgba(0, 180, 216, 0.3);
+  color: #F0EBE3;
+}
+
+:focus-visible {
+  outline: 2px solid var(--gas-blue);
+  outline-offset: 3px;
+  border-radius: 4px;
+}
+
+/* Grain texture overlay */
+.grain::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  opacity: 0.035;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 512 512' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='1'/%3E%3C/svg%3E");
+  background-size: 200px 200px;
+  z-index: 1;
+}
+
+/* Glassmorphism */
+.glass {
+  background: rgba(59, 31, 10, 0.35);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(240, 235, 227, 0.08);
+}
+
+/* Glow button */
+.btn-glow {
+  background: var(--gas-blue);
+  color: var(--deep-purple);
+  font-weight: 700;
+  border-radius: 0.75rem;
+  padding: 0.875rem 2rem;
+  transition: box-shadow 0.2s ease, transform 0.2s ease;
+  display: inline-block;
+}
+
+.btn-glow:hover {
+  box-shadow: 0 0 20px rgba(0, 180, 216, 0.6), 0 0 40px rgba(0, 180, 216, 0.25);
+  transform: translateY(-1px);
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: var(--deep-purple);
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(0, 180, 216, 0.3);
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(0, 180, 216, 0.6);
+}
+
+/* Particle grid */
+.particle-grid {
+  background-image:
+    radial-gradient(circle at 1px 1px, rgba(0,180,216,0.12) 1px, transparent 0);
+  background-size: 40px 40px;
+  animation: gridShift 20s linear infinite;
+}
+
+@keyframes gridShift {
+  0% { background-position: 0 0; }
+  100% { background-position: 40px 40px; }
+}
+
+/* Prose styles */
+.prose-casino h2 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #F0EBE3;
+  margin-top: 2.5rem;
+  margin-bottom: 1rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid rgba(0,180,216,0.2);
+}
+
+.prose-casino h3 {
+  font-size: 1.15rem;
+  font-weight: 600;
+  color: #00B4D8;
+  margin-top: 1.5rem;
+  margin-bottom: 0.75rem;
+}
+
+.prose-casino p {
+  color: rgba(240,235,227,0.8);
+  line-height: 1.8;
+  margin-bottom: 1rem;
+}
+
+.prose-casino ul {
+  list-style: none;
+  margin-bottom: 1rem;
+}
+
+.prose-casino ul li {
+  color: rgba(240,235,227,0.8);
+  line-height: 1.7;
+  padding-left: 1.25rem;
+  position: relative;
+  margin-bottom: 0.4rem;
+}
+
+.prose-casino ul li::before {
+  content: '+';
+  position: absolute;
+  left: 0;
+  color: #00B4D8;
+  font-weight: 700;
+}
+
+.prose-casino strong {
+  color: #F0EBE3;
+  font-weight: 600;
+}
