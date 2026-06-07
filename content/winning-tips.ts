@@ -38,12 +38,10 @@ export const withdrawalTips: WithdrawalTip[] = [
 ]
 
 export const winningProofs: WinningProof[] = [
-  // Add player proof images here
-  // Example:
-  // {
-  //   image: '/proofs/player-win-001.jpg',
-  //   caption: 'Player A — Live Roulette win',
-  //   amount: '$2,450',
-  //   date: 'June 2026',
-  // },
+  {
+    image: '/proofs/win-001.jpg',
+    caption: 'EpicWin — Gates of Pyroth | Main RM5 Cuci RM1,900',
+    amount: 'MYR 1,900',
+    date: 'June 2026',
+  },
 ]
