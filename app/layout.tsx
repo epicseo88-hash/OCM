@@ -18,7 +18,7 @@ export const metadata: Metadata = {
     template: '%s | iGamingHub',
   },
   description: 'iGamingHub delivers independent, expert-reviewed online casino rankings. Find your edge with trusted reviews, bonus guides, and strategy content.',
-  metadataBase: new URL('https://igaminghub.com'),
+  metadataBase: new URL('https://igamingtips.org'),
   openGraph: {
     type: 'website',
     siteName: 'iGamingHub',
