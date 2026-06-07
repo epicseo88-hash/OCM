@@ -18,7 +18,7 @@ export const withdrawalTips: WithdrawalTip[] = [
   },
   {
     title: 'Use E-Wallets for Fastest Payouts',
-    description: 'Skrill and Neteller typically process within 24 hours. Bank transfers can take 3-5 business days — avoid them if speed matters.',
+    description: 'Skrill and Neteller typically process within 24 hours. Bank transfers can take 3 to 5 business days. Avoid them if speed matters.',
   },
   {
     title: 'Withdraw in the Same Currency You Deposited',
@@ -30,7 +30,7 @@ export const withdrawalTips: WithdrawalTip[] = [
   },
   {
     title: 'Set a Daily Withdrawal Limit',
-    description: 'Protect your winnings by setting a withdrawal limit. This prevents impulsive re-deposits after a big win and keeps your bankroll healthy.',
+    description: 'Protect your winnings by setting a withdrawal limit. This prevents impulsive redeposits after a big win and keeps your bankroll healthy.',
   },
 ]
 
