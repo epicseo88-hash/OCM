@@ -49,14 +49,14 @@ const whyChoose = [
 
 export default function WinningTipsPage() {
   return (
-    <main className="min-h-screen pt-24 pb-16" style={{ background: 'var(--bg)' }}>
+    <main className="min-h-screen pt-16 md:pt-24 pb-16" style={{ background: 'var(--bg)' }}>
 
       {/* Hero */}
-      <section className="text-center px-4 mb-4 md:mb-12">
-        <span style={{ color: 'var(--accent)', fontSize: '0.75rem', fontWeight: 700, letterSpacing: '0.15em', textTransform: 'uppercase' }}>
+      <section className="text-center px-4 mb-2 md:mb-12">
+        <span className="hidden md:inline" style={{ color: 'var(--accent)', fontSize: '0.75rem', fontWeight: 700, letterSpacing: '0.15em', textTransform: 'uppercase' }}>
           Proven Results
         </span>
-        <h1 className="text-2xl md:text-4xl font-bold mt-1 mb-2 md:mb-4" style={{ color: 'var(--text)' }}>
+        <h1 className="text-lg md:text-4xl font-bold mt-1 mb-1 md:mb-4" style={{ color: 'var(--text)' }}>
           Epicwin Real Winning Tips
         </h1>
         <p className="hidden md:block max-w-xl mx-auto" style={{ color: 'var(--text-muted)', fontSize: '1.05rem', lineHeight: 1.7 }}>
@@ -65,25 +65,22 @@ export default function WinningTipsPage() {
       </section>
 
       {/* Telegram CTA Banner */}
-      <section className="max-w-6xl mx-auto px-4 mb-4 md:mb-10">
+      <section className="max-w-6xl mx-auto px-4 mb-2 md:mb-10">
         <a
           href="https://t.me/EPICWININFINITY"
           target="_blank"
           rel="noopener noreferrer"
-          className="flex items-center justify-between rounded-xl px-4 py-3 md:px-6 md:py-4 gap-3"
+          className="flex items-center justify-between rounded-lg px-3 py-2 md:rounded-xl md:px-6 md:py-4 gap-2 md:gap-4"
           style={{ background: 'linear-gradient(90deg, #5b21b6 0%, #7c3aed 100%)', border: '1px solid rgba(124,58,237,0.4)' }}
         >
-          <div className="flex items-center gap-3">
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="white" xmlns="http://www.w3.org/2000/svg">
+          <div className="flex items-center gap-2">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="white" xmlns="http://www.w3.org/2000/svg">
               <path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm5.894 8.221-1.97 9.28c-.145.658-.537.818-1.084.508l-3-2.21-1.447 1.394c-.16.16-.295.295-.605.295l.213-3.053 5.56-5.023c.242-.213-.054-.333-.373-.12L7.88 13.47l-2.96-.924c-.643-.204-.657-.643.136-.953l11.57-4.461c.537-.194 1.006.131.268.089z"/>
             </svg>
-            <div>
-              <p className="font-bold text-white text-sm">Join Our Official Telegram</p>
-              <p className="text-purple-200 text-xs">@EPICWININFINITY. Daily winning tips and live proofs</p>
-            </div>
+            <p className="font-semibold text-white text-xs md:text-sm">Join @EPICWININFINITY for daily winning tips</p>
           </div>
           <span
-            className="rounded-lg px-4 py-2 text-sm font-bold shrink-0"
+            className="rounded-md px-3 py-1 text-xs md:rounded-lg md:px-4 md:py-2 md:text-sm font-bold shrink-0"
             style={{ background: 'white', color: '#7c3aed' }}
           >
             Join Now
@@ -93,12 +90,13 @@ export default function WinningTipsPage() {
 
       {/* Winning Proofs Section */}
       <section className="max-w-6xl mx-auto px-4 mb-20">
-        <h2 className="text-2xl font-bold mb-2" style={{ color: 'var(--text)' }}>
+        <h2 className="text-base md:text-2xl font-bold mb-1 md:mb-2" style={{ color: 'var(--text)' }}>
           Player Withdrawal Proofs
         </h2>
-        <p className="mb-8" style={{ color: 'var(--text-muted)', fontSize: '0.95rem' }}>
+        <p className="hidden md:block mb-8" style={{ color: 'var(--text-muted)', fontSize: '0.95rem' }}>
           Verified screenshots submitted by real players. Updated regularly.
         </p>
+        <div className="mb-3 md:mb-8" />
         <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
           {winningProofs.map((proof, i) => (
             <div
@@ -109,7 +107,7 @@ export default function WinningTipsPage() {
                 border: '1px solid rgba(0,180,216,0.12)',
               }}
             >
-              <div className="relative w-full" style={{ aspectRatio: '4/3' }}>
+              <div className="relative w-full aspect-square md:aspect-[4/3]">
                 <Image
                   src={proof.image}
                   alt={proof.caption}
