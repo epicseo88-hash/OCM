@@ -88,6 +88,11 @@ export default function WinningTipsPage() {
         </a>
       </section>
 
+      {/* Testimonials Carousel */}
+      <section className="max-w-6xl mx-auto px-4 mb-3 md:mb-10">
+        <TestimonialsCarousel />
+      </section>
+
       {/* Winning Proofs Section */}
       <section className="max-w-6xl mx-auto px-4 mb-20">
         <h2 className="text-base md:text-2xl font-bold mb-1 md:mb-2" style={{ color: 'var(--text)' }}>
@@ -206,16 +211,6 @@ export default function WinningTipsPage() {
         </div>
       </section>
 
-      {/* Testimonials */}
-      <section className="max-w-6xl mx-auto px-4 mb-20">
-        <h2 className="text-2xl font-bold mb-2 text-center" style={{ color: 'var(--text)' }}>
-          Trusted by Thousands of Players
-        </h2>
-        <p className="text-center mb-8 text-sm" style={{ color: 'var(--text-muted)' }}>
-          Real feedback from our Telegram community.
-        </p>
-        <TestimonialsCarousel />
-      </section>
 
       {/* Withdrawal Tips Section */}
       <section className="max-w-4xl mx-auto px-4">

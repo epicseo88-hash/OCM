@@ -45,6 +45,10 @@ body {
   border-radius: 4px;
 }
 
+/* Hide scrollbar for carousel tracks */
+.scrollbar-hide::-webkit-scrollbar { display: none; }
+.scrollbar-hide { -ms-overflow-style: none; scrollbar-width: none; }
+
 /* Grain texture overlay */
 .grain::after {
   content: '';
