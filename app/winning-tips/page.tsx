@@ -25,46 +25,8 @@ export default function WinningTipsPage() {
         </p>
       </section>
 
-      {/* Withdrawal Tips Section */}
-      <section className="max-w-4xl mx-auto px-4 mb-20">
-        <h2 className="text-2xl font-bold mb-8" style={{ color: 'var(--text)' }}>
-          Withdrawal Tips
-        </h2>
-        <div className="grid gap-4 md:grid-cols-2">
-          {withdrawalTips.map((tip, i) => (
-            <div
-              key={i}
-              className="rounded-xl p-5"
-              style={{
-                background: 'var(--card)',
-                border: '1px solid rgba(0,180,216,0.12)',
-              }}
-            >
-              <div className="flex items-start gap-3">
-                <span
-                  className="rounded-full flex items-center justify-center shrink-0"
-                  style={{
-                    width: 36, height: 36,
-                    background: 'rgba(0,180,216,0.12)',
-                    color: 'var(--accent)',
-                    fontWeight: 700,
-                    fontSize: '0.9rem',
-                  }}
-                >
-                  {i + 1}
-                </span>
-                <div>
-                  <h3 className="font-semibold mb-1" style={{ color: 'var(--text)' }}>{tip.title}</h3>
-                  <p style={{ color: 'var(--text-muted)', fontSize: '0.9rem', lineHeight: 1.6 }}>{tip.description}</p>
-                </div>
-              </div>
-            </div>
-          ))}
-        </div>
-      </section>
-
       {/* Winning Proofs Section */}
-      <section className="max-w-6xl mx-auto px-4">
+      <section className="max-w-6xl mx-auto px-4 mb-20">
         <h2 className="text-2xl font-bold mb-2" style={{ color: 'var(--text)' }}>
           Player Withdrawal Proofs
         </h2>
@@ -119,6 +81,44 @@ export default function WinningTipsPage() {
             <p className="text-sm">Check back soon — player submissions are reviewed and added regularly.</p>
           </div>
         )}
+      </section>
+
+      {/* Withdrawal Tips Section */}
+      <section className="max-w-4xl mx-auto px-4">
+        <h2 className="text-2xl font-bold mb-8" style={{ color: 'var(--text)' }}>
+          Withdrawal Tips
+        </h2>
+        <div className="grid gap-4 md:grid-cols-2">
+          {withdrawalTips.map((tip, i) => (
+            <div
+              key={i}
+              className="rounded-xl p-5"
+              style={{
+                background: 'var(--card)',
+                border: '1px solid rgba(0,180,216,0.12)',
+              }}
+            >
+              <div className="flex items-start gap-3">
+                <span
+                  className="rounded-full flex items-center justify-center shrink-0"
+                  style={{
+                    width: 36, height: 36,
+                    background: 'rgba(0,180,216,0.12)',
+                    color: 'var(--accent)',
+                    fontWeight: 700,
+                    fontSize: '0.9rem',
+                  }}
+                >
+                  {i + 1}
+                </span>
+                <div>
+                  <h3 className="font-semibold mb-1" style={{ color: 'var(--text)' }}>{tip.title}</h3>
+                  <p style={{ color: 'var(--text-muted)', fontSize: '0.9rem', lineHeight: 1.6 }}>{tip.description}</p>
+                </div>
+              </div>
+            </div>
+          ))}
+        </div>
       </section>
 
     </main>
