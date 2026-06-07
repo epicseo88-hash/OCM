@@ -25,23 +25,19 @@ export const withdrawalTips: WithdrawalTip[] = [
   },
   {
     title: 'Meet Wagering Requirements First',
-    description: 'Bonus funds cannot be withdrawn until wagering requirements are met. Check your bonus terms and track your progress in the casino dashboard.',
+    description: 'Bonus funds cannot be withdrawn until wagering requirements are met. Check your bonus terms and track your wagering progress before requesting a withdrawal.',
   },
   {
-    title: 'Request Withdrawals During Business Hours',
-    description: 'Manual review withdrawals are processed faster when submitted during the casino support team working hours — typically 9am to 6pm GMT.',
-  },
-  {
-    title: 'Keep Your Withdrawal Amount Consistent',
-    description: 'Large one-time withdrawals can trigger additional security checks. Withdrawing in consistent amounts reduces the chance of holds or delays.',
+    title: 'Set a Daily Withdrawal Limit',
+    description: 'Protect your winnings by setting a withdrawal limit. This prevents impulsive re-deposits after a big win and keeps your bankroll healthy.',
   },
 ]
 
 export const winningProofs: WinningProof[] = [
   {
-    image: '/proofs/win-001.jpg',
-    caption: 'EpicWin — Gates of Pyroth | Main RM5 Cuci RM1,900',
-    amount: 'MYR 1,900',
-    date: 'June 2026',
+    image: '/proofs/aa.jpeg',
+    caption: 'Verified withdrawal processed successfully',
+    amount: 'RM 1,900',
+    date: '7 Jun 2026',
   },
 ]
