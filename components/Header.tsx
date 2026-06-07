@@ -7,6 +7,7 @@ const NAV_LINKS = [
   { href: '/reviews/', label: 'Casino Reviews' },
   { href: '/blog/', label: 'Blog' },
   { href: '/about/', label: 'About' },
+  { href: '/winning-tips/', label: 'Winning Tips' },
 ]
 
 export default function Header() {
