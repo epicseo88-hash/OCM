@@ -1,6 +1,7 @@
 import type { Metadata } from 'next'
 import Image from 'next/image'
 import { winningProofs, withdrawalTips } from '@/content/winning-tips'
+import TestimonialsCarousel from '@/components/TestimonialsCarousel'
 
 export const metadata: Metadata = {
   title: 'Epicwin Real Winning Tips',
@@ -9,17 +10,41 @@ export const metadata: Metadata = {
 }
 
 const howItWorks = [
-  { step: '1', label: 'Join Telegram', desc: 'Join our Telegram group to get winning tips daily' },
-  { step: '2', label: 'Follow Tips', desc: 'Use the tips provided by our team' },
-  { step: '3', label: 'Play & Win', desc: 'Play your favourite games and win big' },
-  { step: '4', label: 'Withdraw & Enjoy', desc: 'Fast and secure withdrawal' },
+  {
+    step: '1', label: 'Join Telegram', desc: 'Join our Telegram group to get winning tips daily',
+    icon: <svg width="36" height="36" viewBox="0 0 24 24" fill="#7c3aed"><path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm5.894 8.221-1.97 9.28c-.145.658-.537.818-1.084.508l-3-2.21-1.447 1.394c-.16.16-.295.295-.605.295l.213-3.053 5.56-5.023c.242-.213-.054-.333-.373-.12L7.88 13.47l-2.96-.924c-.643-.204-.657-.643.136-.953l11.57-4.461c.537-.194 1.006.131.268.089z"/></svg>,
+  },
+  {
+    step: '2', label: 'Follow Tips', desc: 'Use the tips provided by our team',
+    icon: <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="#0ea5e9" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M9 18h6M10 22h4M12 2a7 7 0 0 1 7 7c0 2.5-1.5 4.5-3 6H8c-1.5-1.5-3-3.5-3-6a7 7 0 0 1 7-7z"/></svg>,
+  },
+  {
+    step: '3', label: 'Play & Win', desc: 'Play your favourite games and win big',
+    icon: <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="#10b981" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M8 11v4M10 13H6M17 12v.01M14 15v.01"/><path d="M12 3c-1.5 0-3 .5-3 2h6c0-1.5-1.5-2-3-2z"/></svg>,
+  },
+  {
+    step: '4', label: 'Withdraw & Enjoy', desc: 'Fast and secure withdrawal',
+    icon: <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="#f59e0b" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 6v2M12 16v2M9 9h1a2 2 0 0 1 0 4h-1m4 0h1a2 2 0 0 0 0-4h-1"/></svg>,
+  },
 ]
 
 const whyChoose = [
-  { title: '100% Real Withdrawal', desc: 'We show real proofs, not just talk.' },
-  { title: 'Daily Winning Tips', desc: 'Fresh tips updated every day.' },
-  { title: 'Trusted & Secure', desc: 'Your safety is our top priority.' },
-  { title: 'Fast & Safe Payouts', desc: 'We process withdrawals quickly.' },
+  {
+    title: '100% Real Withdrawal', desc: 'We show real proofs, not just talk.',
+    icon: <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#10b981" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>,
+  },
+  {
+    title: 'Daily Winning Tips', desc: 'Fresh tips updated every day.',
+    icon: <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#0ea5e9" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>,
+  },
+  {
+    title: 'Trusted & Secure', desc: 'Your safety is our top priority.',
+    icon: <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#7c3aed" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>,
+  },
+  {
+    title: 'Fast & Safe Payouts', desc: 'We process withdrawals quickly.',
+    icon: <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#f59e0b" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>,
+  },
 ]
 
 export default function WinningTipsPage() {
@@ -125,28 +150,44 @@ export default function WinningTipsPage() {
       </section>
 
       {/* How It Works */}
-      <section className="max-w-6xl mx-auto px-4 mb-16">
-        <h2 className="text-2xl font-bold mb-8 text-center" style={{ color: 'var(--text)' }}>
-          How It Works
-        </h2>
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
-          {howItWorks.map((item, i) => (
-            <div key={i} className="flex flex-col items-center text-center gap-3">
-              <div
-                className="rounded-full flex items-center justify-center font-bold text-lg"
-                style={{ width: 56, height: 56, background: 'rgba(124,58,237,0.15)', color: '#7c3aed', border: '2px solid rgba(124,58,237,0.3)' }}
-              >
-                {item.step}
+      <section className="mb-16 px-4">
+        <div className="max-w-6xl mx-auto rounded-2xl p-8 md:p-12" style={{ background: 'linear-gradient(135deg, rgba(124,58,237,0.12) 0%, rgba(0,180,216,0.06) 100%)', border: '1px solid rgba(124,58,237,0.2)' }}>
+          <h2 className="text-2xl font-bold mb-10 text-center" style={{ color: 'var(--text)' }}>
+            How It Works
+          </h2>
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-6 md:gap-4 relative">
+            {howItWorks.map((item, i) => (
+              <div key={i} className="flex flex-col items-center text-center gap-4 relative">
+                {/* Icon card */}
+                <div
+                  className="rounded-2xl flex items-center justify-center relative"
+                  style={{ width: 80, height: 80, background: 'rgba(124,58,237,0.18)', border: '2px solid rgba(124,58,237,0.35)', boxShadow: '0 0 24px rgba(124,58,237,0.2)' }}
+                >
+                  {/* Step badge */}
+                  <span
+                    className="absolute -top-2 -right-2 rounded-full flex items-center justify-center text-xs font-bold"
+                    style={{ width: 22, height: 22, background: '#7c3aed', color: '#fff' }}
+                  >
+                    {item.step}
+                  </span>
+                  {item.icon}
+                </div>
+                {/* Arrow between steps on desktop */}
+                {i < howItWorks.length - 1 && (
+                  <div className="hidden md:block absolute top-10 -right-3 z-10" style={{ color: 'rgba(124,58,237,0.5)', fontSize: '1.4rem' }}>
+                    ›
+                  </div>
+                )}
+                <p className="font-bold text-sm" style={{ color: 'var(--text)' }}>{item.label}</p>
+                <p className="text-xs leading-relaxed" style={{ color: 'var(--text-muted)' }}>{item.desc}</p>
               </div>
-              <p className="font-bold text-sm" style={{ color: 'var(--text)' }}>{item.label}</p>
-              <p className="text-xs" style={{ color: 'var(--text-muted)', lineHeight: 1.6 }}>{item.desc}</p>
-            </div>
-          ))}
+            ))}
+          </div>
         </div>
       </section>
 
       {/* Why Choose EpicWin */}
-      <section className="max-w-6xl mx-auto px-4 mb-20">
+      <section className="max-w-6xl mx-auto px-4 mb-16">
         <h2 className="text-2xl font-bold mb-8 text-center" style={{ color: 'var(--text)' }}>
           Why Choose EpicWin
         </h2>
@@ -154,14 +195,28 @@ export default function WinningTipsPage() {
           {whyChoose.map((item, i) => (
             <div
               key={i}
-              className="rounded-xl p-5"
+              className="rounded-xl p-5 flex gap-3 items-start"
               style={{ background: 'var(--card)', border: '1px solid rgba(124,58,237,0.15)' }}
             >
-              <p className="font-bold mb-1 text-sm" style={{ color: 'var(--text)' }}>{item.title}</p>
-              <p className="text-xs" style={{ color: 'var(--text-muted)', lineHeight: 1.6 }}>{item.desc}</p>
+              <span className="text-xl shrink-0">{item.icon}</span>
+              <div>
+                <p className="font-bold mb-1 text-sm" style={{ color: 'var(--text)' }}>{item.title}</p>
+                <p className="text-xs" style={{ color: 'var(--text-muted)', lineHeight: 1.6 }}>{item.desc}</p>
+              </div>
             </div>
           ))}
         </div>
+      </section>
+
+      {/* Testimonials */}
+      <section className="max-w-6xl mx-auto px-4 mb-20">
+        <h2 className="text-2xl font-bold mb-2 text-center" style={{ color: 'var(--text)' }}>
+          Trusted by Thousands of Players
+        </h2>
+        <p className="text-center mb-8 text-sm" style={{ color: 'var(--text-muted)' }}>
+          Real feedback from our Telegram community.
+        </p>
+        <TestimonialsCarousel />
       </section>
 
       {/* Withdrawal Tips Section */}
