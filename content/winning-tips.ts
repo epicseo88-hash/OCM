@@ -56,4 +56,11 @@ export const winningProofs: WinningProof[] = [
     date: '3 Jun 2026',
     ctaUrl: 'https://epicwinslots.com',
   },
+  {
+    image: '/proofs/dd.jpeg',
+    caption: 'Montezuma 3 Temples withdrawal via AutoPay',
+    amount: 'RM 1,080',
+    date: '29 Apr 2026',
+    ctaUrl: 'https://epicwinslots.com',
+  },
 ]

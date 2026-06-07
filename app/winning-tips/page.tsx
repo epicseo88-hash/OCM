@@ -1,7 +1,7 @@
 import type { Metadata } from 'next'
-import Image from 'next/image'
 import { winningProofs, withdrawalTips } from '@/content/winning-tips'
 import TestimonialsCarousel from '@/components/TestimonialsCarousel'
+import ProofsGrid from '@/components/ProofsGrid'
 
 export const metadata: Metadata = {
   title: 'Epicwin Real Winning Tips',
@@ -102,54 +102,7 @@ export default function WinningTipsPage() {
           Verified screenshots submitted by real players. Updated regularly.
         </p>
         <div className="mb-3 md:mb-8" />
-        <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-          {winningProofs.map((proof, i) => (
-            <div
-              key={i}
-              className="rounded-xl overflow-hidden"
-              style={{
-                background: 'var(--card)',
-                border: '1px solid rgba(0,180,216,0.12)',
-              }}
-            >
-              <div className="relative w-full aspect-square md:aspect-[4/3]">
-                <Image
-                  src={proof.image}
-                  alt={proof.caption}
-                  fill
-                  className="object-cover"
-                />
-              </div>
-              <div className="p-4">
-                <p className="font-semibold mb-1" style={{ color: 'var(--text)' }}>{proof.caption}</p>
-                <div className="flex items-center justify-between mb-3">
-                  <span style={{ color: 'var(--accent)', fontSize: '0.85rem', fontWeight: 600 }}>{proof.amount}</span>
-                  <span style={{ color: 'var(--text-muted)', fontSize: '0.8rem' }}>{proof.date}</span>
-                </div>
-                {proof.ctaUrl && (
-                  <a
-                    href={proof.ctaUrl}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="block text-center w-full rounded-lg py-2 text-sm font-semibold"
-                    style={{ background: 'var(--accent)', color: '#000' }}
-                  >
-                    Play Now
-                  </a>
-                )}
-              </div>
-            </div>
-          ))}
-        </div>
-        {winningProofs.length === 0 && (
-          <div
-            className="text-center py-20 rounded-xl"
-            style={{ background: 'var(--card)', border: '1px solid rgba(0,180,216,0.12)', color: 'var(--text-muted)' }}
-          >
-            <p className="text-lg mb-2">No proofs uploaded yet.</p>
-            <p className="text-sm">Check back soon. Player submissions are reviewed and added regularly.</p>
-          </div>
-        )}
+        <ProofsGrid proofs={winningProofs} />
       </section>
 
       {/* How It Works */}
