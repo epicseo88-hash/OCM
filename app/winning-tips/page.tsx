@@ -3,26 +3,67 @@ import Image from 'next/image'
 import { winningProofs, withdrawalTips } from '@/content/winning-tips'
 
 export const metadata: Metadata = {
-  title: 'Winning Tips',
+  title: 'Epicwin Real Winning Tips',
   description: 'Real player withdrawal proofs and expert winning tips for online casino players at iGamingHub.',
   alternates: { canonical: 'https://igamingtips.org/winning-tips/' },
 }
+
+const howItWorks = [
+  { step: '1', label: 'Join Telegram', desc: 'Join our Telegram group to get winning tips daily' },
+  { step: '2', label: 'Follow Tips', desc: 'Use the tips provided by our team' },
+  { step: '3', label: 'Play & Win', desc: 'Play your favourite games and win big' },
+  { step: '4', label: 'Withdraw & Enjoy', desc: 'Fast and secure withdrawal' },
+]
+
+const whyChoose = [
+  { title: '100% Real Withdrawal', desc: 'We show real proofs, not just talk.' },
+  { title: 'Daily Winning Tips', desc: 'Fresh tips updated every day.' },
+  { title: 'Trusted & Secure', desc: 'Your safety is our top priority.' },
+  { title: 'Fast & Safe Payouts', desc: 'We process withdrawals quickly.' },
+]
 
 export default function WinningTipsPage() {
   return (
     <main className="min-h-screen pt-24 pb-16" style={{ background: 'var(--bg)' }}>
 
       {/* Hero */}
-      <section className="text-center px-4 mb-16">
+      <section className="text-center px-4 mb-12">
         <span style={{ color: 'var(--accent)', fontSize: '0.75rem', fontWeight: 700, letterSpacing: '0.15em', textTransform: 'uppercase' }}>
           Proven Results
         </span>
         <h1 className="text-4xl font-bold mt-2 mb-4" style={{ color: 'var(--text)' }}>
-          Winning Tips
+          Epicwin Real Winning Tips
         </h1>
         <p className="max-w-xl mx-auto" style={{ color: 'var(--text-muted)', fontSize: '1.05rem', lineHeight: 1.7 }}>
           Real withdrawal proofs from our players, plus expert tips to help you cash out faster and smarter.
         </p>
+      </section>
+
+      {/* Telegram CTA Banner */}
+      <section className="max-w-6xl mx-auto px-4 mb-10">
+        <a
+          href="https://t.me/EPICWININFINITY"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="flex items-center justify-between rounded-xl px-6 py-4 gap-4"
+          style={{ background: 'linear-gradient(90deg, #5b21b6 0%, #7c3aed 100%)', border: '1px solid rgba(124,58,237,0.4)' }}
+        >
+          <div className="flex items-center gap-3">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="white" xmlns="http://www.w3.org/2000/svg">
+              <path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm5.894 8.221-1.97 9.28c-.145.658-.537.818-1.084.508l-3-2.21-1.447 1.394c-.16.16-.295.295-.605.295l.213-3.053 5.56-5.023c.242-.213-.054-.333-.373-.12L7.88 13.47l-2.96-.924c-.643-.204-.657-.643.136-.953l11.57-4.461c.537-.194 1.006.131.268.089z"/>
+            </svg>
+            <div>
+              <p className="font-bold text-white text-sm">Join Our Official Telegram</p>
+              <p className="text-purple-200 text-xs">@EPICWININFINITY — Daily winning tips and live proofs</p>
+            </div>
+          </div>
+          <span
+            className="rounded-lg px-4 py-2 text-sm font-bold shrink-0"
+            style={{ background: 'white', color: '#7c3aed' }}
+          >
+            Join Now
+          </span>
+        </a>
       </section>
 
       {/* Winning Proofs Section */}
@@ -78,9 +119,49 @@ export default function WinningTipsPage() {
             style={{ background: 'var(--card)', border: '1px solid rgba(0,180,216,0.12)', color: 'var(--text-muted)' }}
           >
             <p className="text-lg mb-2">No proofs uploaded yet.</p>
-            <p className="text-sm">Check back soon — player submissions are reviewed and added regularly.</p>
+            <p className="text-sm">Check back soon. Player submissions are reviewed and added regularly.</p>
           </div>
         )}
+      </section>
+
+      {/* How It Works */}
+      <section className="max-w-6xl mx-auto px-4 mb-16">
+        <h2 className="text-2xl font-bold mb-8 text-center" style={{ color: 'var(--text)' }}>
+          How It Works
+        </h2>
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
+          {howItWorks.map((item, i) => (
+            <div key={i} className="flex flex-col items-center text-center gap-3">
+              <div
+                className="rounded-full flex items-center justify-center font-bold text-lg"
+                style={{ width: 56, height: 56, background: 'rgba(124,58,237,0.15)', color: '#7c3aed', border: '2px solid rgba(124,58,237,0.3)' }}
+              >
+                {item.step}
+              </div>
+              <p className="font-bold text-sm" style={{ color: 'var(--text)' }}>{item.label}</p>
+              <p className="text-xs" style={{ color: 'var(--text-muted)', lineHeight: 1.6 }}>{item.desc}</p>
+            </div>
+          ))}
+        </div>
+      </section>
+
+      {/* Why Choose EpicWin */}
+      <section className="max-w-6xl mx-auto px-4 mb-20">
+        <h2 className="text-2xl font-bold mb-8 text-center" style={{ color: 'var(--text)' }}>
+          Why Choose EpicWin
+        </h2>
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
+          {whyChoose.map((item, i) => (
+            <div
+              key={i}
+              className="rounded-xl p-5"
+              style={{ background: 'var(--card)', border: '1px solid rgba(124,58,237,0.15)' }}
+            >
+              <p className="font-bold mb-1 text-sm" style={{ color: 'var(--text)' }}>{item.title}</p>
+              <p className="text-xs" style={{ color: 'var(--text-muted)', lineHeight: 1.6 }}>{item.desc}</p>
+            </div>
+          ))}
+        </div>
       </section>
 
       {/* Withdrawal Tips Section */}
