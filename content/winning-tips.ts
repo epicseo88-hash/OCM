@@ -8,6 +8,7 @@ export interface WinningProof {
   caption: string
   amount: string
   date: string
+  ctaUrl?: string
 }
 
 export const withdrawalTips: WithdrawalTip[] = [
@@ -39,5 +40,6 @@ export const winningProofs: WinningProof[] = [
     caption: 'Verified withdrawal processed successfully',
     amount: 'RM 1,900',
     date: '7 Jun 2026',
+    ctaUrl: 'https://epicwinslots.com',
   },
 ]

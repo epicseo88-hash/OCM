@@ -91,10 +91,21 @@ export default function WinningTipsPage() {
               </div>
               <div className="p-4">
                 <p className="font-semibold mb-1" style={{ color: 'var(--text)' }}>{proof.caption}</p>
-                <div className="flex items-center justify-between">
+                <div className="flex items-center justify-between mb-3">
                   <span style={{ color: 'var(--accent)', fontSize: '0.85rem', fontWeight: 600 }}>{proof.amount}</span>
                   <span style={{ color: 'var(--text-muted)', fontSize: '0.8rem' }}>{proof.date}</span>
                 </div>
+                {proof.ctaUrl && (
+                  <a
+                    href={proof.ctaUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="block text-center w-full rounded-lg py-2 text-sm font-semibold"
+                    style={{ background: 'var(--accent)', color: '#000' }}
+                  >
+                    Play Now
+                  </a>
+                )}
               </div>
             </div>
           ))}
