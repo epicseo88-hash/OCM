@@ -52,25 +52,25 @@ export default function WinningTipsPage() {
     <main className="min-h-screen pt-24 pb-16" style={{ background: 'var(--bg)' }}>
 
       {/* Hero */}
-      <section className="text-center px-4 mb-12">
+      <section className="text-center px-4 mb-4 md:mb-12">
         <span style={{ color: 'var(--accent)', fontSize: '0.75rem', fontWeight: 700, letterSpacing: '0.15em', textTransform: 'uppercase' }}>
           Proven Results
         </span>
-        <h1 className="text-4xl font-bold mt-2 mb-4" style={{ color: 'var(--text)' }}>
+        <h1 className="text-2xl md:text-4xl font-bold mt-1 mb-2 md:mb-4" style={{ color: 'var(--text)' }}>
           Epicwin Real Winning Tips
         </h1>
-        <p className="max-w-xl mx-auto" style={{ color: 'var(--text-muted)', fontSize: '1.05rem', lineHeight: 1.7 }}>
+        <p className="hidden md:block max-w-xl mx-auto" style={{ color: 'var(--text-muted)', fontSize: '1.05rem', lineHeight: 1.7 }}>
           Real withdrawal proofs from our players, plus expert tips to help you cash out faster and smarter.
         </p>
       </section>
 
       {/* Telegram CTA Banner */}
-      <section className="max-w-6xl mx-auto px-4 mb-10">
+      <section className="max-w-6xl mx-auto px-4 mb-4 md:mb-10">
         <a
           href="https://t.me/EPICWININFINITY"
           target="_blank"
           rel="noopener noreferrer"
-          className="flex items-center justify-between rounded-xl px-6 py-4 gap-4"
+          className="flex items-center justify-between rounded-xl px-4 py-3 md:px-6 md:py-4 gap-3"
           style={{ background: 'linear-gradient(90deg, #5b21b6 0%, #7c3aed 100%)', border: '1px solid rgba(124,58,237,0.4)' }}
         >
           <div className="flex items-center gap-3">
@@ -79,7 +79,7 @@ export default function WinningTipsPage() {
             </svg>
             <div>
               <p className="font-bold text-white text-sm">Join Our Official Telegram</p>
-              <p className="text-purple-200 text-xs">@EPICWININFINITY — Daily winning tips and live proofs</p>
+              <p className="text-purple-200 text-xs">@EPICWININFINITY. Daily winning tips and live proofs</p>
             </div>
           </div>
           <span
