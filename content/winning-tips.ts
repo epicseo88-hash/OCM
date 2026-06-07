@@ -42,4 +42,18 @@ export const winningProofs: WinningProof[] = [
     date: '7 Jun 2026',
     ctaUrl: 'https://epicwinslots.com',
   },
+  {
+    image: '/proofs/bb.jpeg',
+    caption: 'Bonanza Gold withdrawal via Hong Leong Bank',
+    amount: 'RM 4,522',
+    date: '3 Jun 2026',
+    ctaUrl: 'https://epicwinslots.com',
+  },
+  {
+    image: '/proofs/cc.jpeg',
+    caption: 'Thai Paradise withdrawal via Maybank',
+    amount: 'RM 4,100',
+    date: '3 Jun 2026',
+    ctaUrl: 'https://epicwinslots.com',
+  },
 ]
