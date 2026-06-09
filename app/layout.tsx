@@ -29,6 +29,9 @@ export const metadata: Metadata = {
     site: '@iGamingHub',
   },
   robots: { index: true, follow: true },
+  verification: {
+    google: 'MQVd6ipx6pVAVd5cqDqryG2y2JcUmoN0CxPy9svfycs',
+  },
 }
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
